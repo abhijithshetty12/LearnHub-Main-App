@@ -34,5 +34,5 @@ The **Admin App** allows administrators to:
 - Assign them to specific classes
 - Monitor and manage classroom access
 
-🔗 [LearnHub Admin App on GitHub](https://github.com/JogeshMali/LearnHub-Admin-App)
+🔗 [LearnHub Admin App on GitHub](https://github.com/abhijithshetty12/LearnHub-Admin-App)
 
