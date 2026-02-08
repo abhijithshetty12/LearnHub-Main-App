@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="grey">#B8C2FA</color>
+    <color name="normalgrey">#727277</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="toolbarcolor">#033D57</color>
+    <color name="blueshade">#185771</color>
+    <color name="red">#871F05</color>
+
+
+    <!--033D57-->
+    <!--0F1B27-->
+
+        <color name="primaryBackground">#F5F7FA</color>
+        <color name="cardBackground">#FFFFFF</color>
+        <color name="accentColor">#3F51B5</color>
+        <color name="primaryText">#333333</color>
+        <color name="secondaryText">#757575</color>
+        <color name="inputBackground">#E0E0E0</color>
+        <color name="sendButton">#4CAF50</color>
+        <color name="hintText">#9E9E9E</color>
+        <color name="BrightYellow">#F1C40F</color>
+        <color name="DeepBlue">#2C3E50</color>
+        <color name="LigthGray">#ECF0F1</color>
+        <color name="Red">#FF0000</color>
+    </resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faculty.ui.home.HomeFragment"
+
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/showclassstd"
+        android:layout_width="397dp"
+        android:layout_height="701dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clipToPadding="false"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/showclass"
+        android:layout_width="397dp"
+        android:layout_height="701dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/stdlayout"
+        android:layout_width="349dp"
+        android:layout_height="674dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="185dp"
+            android:layout_height="225dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="168dp"
+
+            app:srcCompat="@drawable/learnhublogo" />
+
+        <TextView
+            android:id="@+id/stdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="44dp"
+
+            android:text="Join a class to get start"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/joinclassbtn"
+            android:layout_width="166dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp"
+            android:text="Join class"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Faclayout"
+        android:layout_width="349dp"
+        android:layout_height="674dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/facimageView"
+            android:layout_width="185dp"
+            android:layout_height="225dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="168dp"
+
+            app:srcCompat="@drawable/learnhublogo" />
+
+        <TextView
+            android:id="@+id/factextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="44dp"
+
+            android:text="Create a class to get start"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/createclassbtn"
+            android:layout_width="166dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="32dp"
+            android:text="Create class"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

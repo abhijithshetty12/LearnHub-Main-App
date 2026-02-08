@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".classroomUi.classwork.classwork">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notesrecyclerview"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@android:drawable/ic_input_add"
+        fab:menu_labels_position="left"
+        fab:menu_colorNormal="@color/toolbarcolor"
+        fab:menu_colorPressed="@color/blueshade"
+        fab:menu_colorRipple="@color/blueshade"
+        fab:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_assignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/assignment"
+            fab:fab_colorNormal="@color/toolbarcolor"
+            fab:fab_colorPressed="@color/blueshade"
+            fab:fab_showShadow="true"
+            fab:fab_label="Assignment"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/assignment"
+            fab:fab_colorNormal="@color/toolbarcolor"
+            fab:fab_colorPressed="@color/blueshade"
+            fab:fab_label="Quiz"
+            fab:fab_showShadow="true"
+             fab:fab_size="normal"/>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/assignment"
+            fab:fab_colorNormal="@color/toolbarcolor"
+            fab:fab_colorPressed="@color/blueshade"
+            fab:fab_label="Notes"
+            fab:fab_showShadow="true"
+            fab:fab_size="mini" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_attendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/assignment"
+            fab:fab_colorNormal="@color/toolbarcolor"
+            fab:fab_colorPressed="@color/blueshade"
+            fab:fab_label="Attendance"
+            fab:fab_showShadow="true"
+            fab:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>

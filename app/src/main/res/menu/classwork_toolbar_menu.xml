@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/menu_notes"
+        android:orderInCategory="100"
+        android:title="Notes"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_assignment"
+        android:orderInCategory="100"
+        android:title="Assignment"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_quiz"
+        android:orderInCategory="100"
+        android:title="Quiz"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/menu_attendance"
+        android:orderInCategory="100"
+        android:title="Attendance"
+        app:showAsAction="never"
+        />
+
+</menu>

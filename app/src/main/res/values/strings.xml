@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">LearnHub</string>
+
+    <string-array name="spinner_items">
+        <item>Faculty</item>
+        <item>Student</item>
+        <item>Parent</item>
+    </string-array>
+    <string name="title_activity_facultyhome">facultyhome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="changeprofile">Change profile</string>
+
+    <string name="menu_home">Classes</string>
+    <string name="menu_notification">Notification</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_help">About us </string>
+    <string name="title_activity_classroom">classroom</string>
+    <string name="title_chat">Chatroom</string>
+    <string name="title_classwork">Classwork</string>
+    <string name="title_people">People</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

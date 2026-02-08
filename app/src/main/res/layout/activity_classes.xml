@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faculty.Classes">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:titleTextColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+            app:titleTextColor="@color/white"
+            app:title="Class settings "
+            app:navigationIcon="@android:drawable/ic_menu_close_clear_cancel">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="395dp"
+        android:layout_height="669dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Class details"
+            android:textColor="@color/toolbarcolor"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cname"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:background="@drawable/rectangle_corner"
+            android:paddingLeft="5dp"
+            android:hint="Class name(required) "
+            android:inputType="text"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/cdescipton"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:background="@drawable/rectangle_corner"
+            android:paddingLeft="5dp"
+            android:hint="Class description "
+            android:inputType="text"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/csection"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:background="@drawable/rectangle_corner"
+            android:paddingLeft="5dp"
+            android:hint="Section "
+            android:inputType="text"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cRoom"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:background="@drawable/rectangle_corner"
+            android:paddingLeft="5dp"
+            android:hint="Room "
+            android:inputType="text"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cSubject"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:background="@drawable/rectangle_corner"
+            android:paddingLeft="5dp"
+            android:hint="Subject "
+            android:inputType="text"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="138dp"
+                android:layout_height="43dp"
+                android:text="Class code : "
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/classcode"
+                android:layout_width="138dp"
+                android:layout_height="43dp"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/reset"
+                android:layout_width="82dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="30dp"
+                android:text="Reset "
+                android:textColor="@color/toolbarcolor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/createbtn"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+           android:layout_gravity="end"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:text="Create"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

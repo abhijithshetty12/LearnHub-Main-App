@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".adapterLayout.ShowNotification"
+    android:layout_margin="6dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:padding="5dp"
+
+    android:background="@drawable/rounded_corner"
+    >
+
+    <!-- Main container for the notification item -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#20000000"
+        >
+
+        <!-- Notification Icon -->
+
+        <!-- Notification Title -->
+        <ImageView
+            android:id="@+id/notification_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/notification" />
+
+        <TextView
+            android:id="@+id/notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/notification_icon"
+            android:textSize="17sp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Maths" />
+
+        <!-- Notification DateTime -->
+        <TextView
+            android:id="@+id/notification_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textSize="13sp"
+            android:textColor="#616161"
+            android:text="11 Nov 2024, 03:45 PM"
+            android:maxLines="1"
+            android:paddingRight="15sp"/>
+
+        <!-- Notification Description -->
+        <TextView
+            android:id="@+id/notification_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification_title"
+            android:layout_toEndOf="@id/notification_icon"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp"
+            android:textColor="#292525"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Uploaded the notes" />
+
+        <!-- Class Name -->
+        <TextView
+            android:id="@+id/notification_class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification_description"
+            android:layout_toEndOf="@id/notification_icon"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:textColor="#3E3A3A"
+            android:text="Class: TYfs" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

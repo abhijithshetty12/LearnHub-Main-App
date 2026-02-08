@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".classroomUi.classwork.CreateAttendance"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/attendance_Toolbar"
+        android:layout_width="393dp"
+        android:layout_height="77dp"
+        android:background="@color/toolbarcolor"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title=" Create Attendance"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Title Input -->
+    <EditText
+        android:id="@+id/attendanceTitle"
+        android:layout_width="366dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rectangle_corner"
+        android:hint="Attendance Title"
+        android:importantForAccessibility="yes"
+        android:inputType="text"
+        android:paddingLeft="10sp"/>
+
+    <!-- Date Input -->
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="20sp"> <!-- Space below date selection -->
+
+        <ImageButton
+            android:id="@+id/datebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:contentDescription="Set due date"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/attendanceDate"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingTop="10sp"
+            android:text="Set due date"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Time Limit Input -->
+
+    <!-- Submit Button -->
+
+
+    <EditText
+        android:id="@+id/attendanceTimeLimit"
+        android:layout_width="368dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_corner"
+        android:hint="Time Limit (in minutes)"
+        android:importantForAccessibility="yes"
+        android:inputType="time"
+        android:paddingLeft="10sp" />
+
+    <Button
+        android:id="@+id/createAttendanceButton"
+        android:layout_width="137dp"
+        android:layout_height="58dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rectangle_corner"
+        android:importantForAccessibility="yes"
+        android:text="Create "
+        android:textSize="20sp"
+        android:layout_marginRight="10sp"
+        android:visibility="visible"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/attenProgressbar"
+        android:visibility="gone"/>
+
+</LinearLayout>

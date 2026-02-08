@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/chat"
+        android:title="@string/title_chat" />
+
+    <item
+        android:id="@+id/nav_classwork"
+        android:icon="@drawable/assignment"
+        android:title="@string/title_classwork" />
+
+    <item
+        android:id="@+id/nav_people"
+        android:icon="@drawable/groups"
+        android:title="@string/title_people" />
+</menu>

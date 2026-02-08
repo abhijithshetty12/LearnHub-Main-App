@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LearnHub"
+        tools:targetApi="31">
+        <activity
+            android:name=".Parent"
+            android:exported="false" />
+        <activity
+            android:name=".adapterLayout.ShowNotification"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.ShowAttendanceResult"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.ShowAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.CreateAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.ShowStudentAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.ShowAssignmentResult"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.ShowAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.CreateAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.UserQuizResult"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.ShowQuizResult"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.questionLayout"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.ShowQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.CreateQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.notes"
+            android:exported="false" />
+        <activity
+            android:name=".adapterLayout.showNotes"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.showDocument"
+            android:exported="false" />
+        <activity
+            android:name=".classroomUi.classwork.UploadDocument"
+            android:exported="false" />
+        <activity
+            android:name=".showpeople"
+            android:exported="false" />
+        <activity
+            android:name=".chatlayout"
+            android:exported="false" />
+        <activity
+            android:name=".classroom"
+            android:exported="true"
+            android:parentActivityName=".faculty.Facultyhome" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".showstdclass"
+            android:exported="true" />
+        <activity
+            android:name=".student.JoinClass"
+            android:exported="false"
+            android:parentActivityName=".faculty.Facultyhome" />
+        <activity
+            android:name=".showclasses"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.Classes"
+            android:exported="false"
+            android:parentActivityName=".faculty.Facultyhome" />
+        <activity
+            android:name=".faculty.Facultyhome"
+            android:exported="true"
+            android:label="@string/title_activity_facultyhome"
+            android:theme="@style/Theme.LearnHub.NoActionBar" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
